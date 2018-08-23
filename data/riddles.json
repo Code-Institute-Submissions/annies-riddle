@@ -1,0 +1,14 @@
+{
+    "riddles": [
+        {"question": "I have no muscle, yet I rule two hemispheres. What am I?", "answer": "brain"},
+        {"question": "What goes up and down but doesn't move?", "answer": "road"},
+        {"question": "What can travel around the world while staying in a corner?", "answer": "stamp"},
+        {"question": "What is it that nobody wants to have, but nobody wants to lose?", "answer": "lawsuit"},
+        {"question": "If you possess me, you'll want to share me. But if you share me, I'll be gone. What am I?", "answer": "secret"},
+        {"question": "What belongs to you but is used by others?", "answer": "name"},
+        {"question": "Hit me hard and I'll crack, but you'll never stop me staring back. What am I?", "answer": "mirror"},
+        {"question": "I'm where yesterday follows today, and tomorrow is in the middle. What am I?", "answer": "dictionary"},
+        {"question": "What is the beginning of Eternity, the end of time and space, the beginning of every end, and the end of every race?", "answer": "E"},
+        {"question": "The more there is, the less you see. What could I be?", "answer": "darkness"}
+    ]
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block canvas %}
+<canvas id="confetti"></canvas>
+<script>
+    var confettiSettings = {
+        target: "confetti",
+        props:["square","triangle","line"],
+        colors: [[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
+        clock:"30",
+    };
+    var confetti = new window.ConfettiGenerator(confettiSettings);
+    confetti.render();
+</script>
+{% endblock %}
+{% block content %}
+<div class="game-card card">
+    <h2>Thanks for playing, {{ username }}!</h2>
+    <p>Take a look at the leaderboard to see where you finished.</p>
+</div>
+{% endblock %}

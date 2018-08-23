@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="game-card card">
+    {% if error %}
+    <div class="error message card">The username you typed was invalid, please try again</div>
+    {% endif %}
+    <h2 class="riddle">Hello, new player!<br /> What's your name?</h2>
+    <form method="POST">
+        <div class="input-group">
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username">
+            <div class="input-group-append">
+                <input class="btn btn-primary" type="submit" value="Start the game">
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

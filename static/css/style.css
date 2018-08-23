@@ -1,0 +1,153 @@
+body {
+    background-color: #f4bf42;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.title-bar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.title-bar h1 {
+    flex: 0 0 50%;
+}
+
+.title-bar h1 a {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.user-score {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex: 0 0 50%;
+    flex-flow: row nowrap;
+    font-weight: 900;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.username {
+    margin: 0 10px;
+}
+
+.score {
+    border: 2px solid white;
+    border-radius: 50%;
+    flex: 0 0 30px;
+    height: 30px;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% {
+        background: rgba(48,232,79, 0.8);
+        border-color: rgba(48,232,79, 1.0);
+        box-shadow: 0 0 0 0 rgba(48,232,79, 0.8);
+        color: rgba(48,232,79, 1.0);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(48,232,79, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(48,232,79, 0);
+    }
+}
+
+.new-point {
+    animation: pulse 2s 1;
+}
+
+.game-card {
+    padding: 3vw;
+}
+
+.riddle {
+    font-size: 24px;
+    text-align: center;
+    padding: 50px;
+}
+
+@keyframes shake {
+    8%, 41% {
+        transform: translateX(-10px);
+    }
+    25%, 58% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    92% {
+        transform: translateX(5px);
+    }
+    0%, 100% {
+        transform: translateX(0);
+    }
+}
+
+.message {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.error {
+    animation: shake .5s linear;
+    background: #cc3f60;
+    color: white;
+}
+
+@keyframes fadeOut {
+    0% {
+        height: 60px;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    99% {
+        height: 0px;
+        margin-top: 0px;
+        opacity: 0;
+        padding: 0px;
+        transform: scaleY(0);
+    }
+    100% {
+        height: 0px;
+        margin-top: 0;
+        opacity: 0;
+        padding: 0;
+    }
+}
+
+.correct {
+    animation: fadeOut 2s ease 5s forwards;
+    background: #30e84f;
+    color: white;
+}
+
+.hiscores {
+    background: #212529;
+    border: 0px;
+    margin: 20px 0;
+}
+
+.hiscores h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#confetti {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
