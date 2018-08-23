@@ -27,9 +27,9 @@ The player is presented with a riddle-me question.
 
 In my Riddle-Me game it doesn't matter if your answer is:
 
-- ball,
-- a ball,
-- a Ball,
+- ball
+- a ball
+- A Ball
 - A BALL
 
 I will convert your answer into lower-case characters and check if your provided answer
